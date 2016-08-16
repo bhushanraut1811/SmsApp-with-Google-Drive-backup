@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmsApp</string>
+    <string name="action_backup">Backup</string>
+    <string name="enter_message">enter message</string>
+    <string name="message_received">Received</string>
+    <string name="message_sent">Sent</string>
+    <string name="message_draft">draft</string>
+    <integer name="abc">123</integer>
+    <string name="action_search">Search</string>
+    <string name="empty_message">Message body empty</string>
+    <string name="enter_number">enter number</string>
+    <string name="create_message">Create Message</string>
+    <string name="empty_contact">contact number empty</string>
+</resources>

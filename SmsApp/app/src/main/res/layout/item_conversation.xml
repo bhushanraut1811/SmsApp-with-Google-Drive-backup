@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_conv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="hello how are I am fine "
+         />
+
+    <TextView
+        android:id="@+id/tv_conv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_conv_msg"
+        android:layout_margin="4dp"
+        android:text="12/11/2012"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_conv_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_conv_msg"
+        android:layout_margin="4dp"
+        android:maxLines="1" />
+
+</RelativeLayout>

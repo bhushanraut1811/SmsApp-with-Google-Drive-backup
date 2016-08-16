@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ConversationActivity">
+
+    <EditText
+        android:id="@+id/et_enter_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="@dimen/margin_8dp"
+        android:visibility="gone" />
+
+
+    <ListView
+        android:id="@+id/lv_chat_conversation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@id/et_enter_number"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:clickable="false"
+        android:stackFromBottom="true">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_send_mesg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/enter_message"
+            android:maxLines="1"
+            android:paddingLeft="8dp" />
+
+        <ImageButton
+            android:id="@+id/btn_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:background="@drawable/image_button_background"
+            android:src="@drawable/ic_add_white_24dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
